@@ -1,0 +1,104 @@
+<!-- Bad Act: Coming Soon page -->
+<!--  Braydon Turner was here  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/ec2046a12a.js" crossorigin="anonymous"></script>
+
+    <script>
+        if (screen.width <= 699) {
+            document.location = "index_mobile.html"
+        }
+    </script>
+
+    <title>Bad Act | Coming Soon...</title>
+    <style>
+        @keyframes b-i1-fadeindown {
+            from {
+                top: -48px;
+                opacity: 0;
+            }
+            to {
+                top: 12px;
+                opacity: 1;
+            }
+        }
+
+        html {
+            background-color: #141414;
+        }
+
+        .i1 {
+            opacity: 0;
+            position: absolute;
+            top: 12px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 4;
+            width: 25rem;
+            height: 25rem;
+
+            animation: b-i1-fadeindown;
+            animation-duration: 2s;
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+        }
+
+        .i2 {
+            opacity: 0;
+            position: absolute;
+            top: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 70%;
+            height: auto;
+
+            animation: fadeIn;
+            animation-delay: 1.6s;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+
+        footer {
+            color: #fff;
+            padding: 4px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+
+            animation: fadeInUp;
+            animation-duration: 2s;
+
+        }
+
+        footer i {
+            color: white;
+            text-decoration: none;
+            padding-left: 8%;
+            padding-right: 8%;
+            font-size: 28px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/assets/img/b-logo-transparent.png" alt="bad act transparent logo" class="i1">
+        <img src="/assets/img/b-members.jpg" alt="bad act band members" class="i2">
+    </div>
+    <footer>
+        <p>
+            <a href="https://www.youtube.com/@badactofficial"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/badactofficial"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@badactofficial"><i class="fa-brands fa-tiktok"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
